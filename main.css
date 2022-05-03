@@ -163,9 +163,53 @@ p{
     top: 0;
     bottom: 0;
 }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 /* hero seciton */
 #hero{
-    background-image: url(./assets/background.jpeg);
+    background-image: url(../assets/background.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -287,7 +331,7 @@ p{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./assets/card-background.jpg);
+    background-image: url(../assets/card-background.jpg);
     background-size: cover;
     margin: 10px 5%;
 }
@@ -317,7 +361,7 @@ p{
 
 /* cards section */
 #cards{
-    background-image: url(./assets/background.jpeg);
+    background-image: url(../assets/card-background.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -358,7 +402,7 @@ p{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./assets/rising-star.jpg);
+    background-image: url(../assets/rising-star.jpg);
     background-size: cover;
     margin: 10px 5%;
     z-index: 1;
@@ -468,7 +512,7 @@ p{
     background-color: black;
 }
 #about-header{
-    background-image: url(./assets/background.jpeg);
+    background-image: url(../assets/background.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -486,7 +530,7 @@ p{
     z-index: -1;
 }
 #about{
-    background-image: url(./assets/background.jpeg);
+    background-image: url(../assets/background.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -618,7 +662,7 @@ p{
 /* End Footer */
 /* Projects */
 #projects{
-    background-image: url(./assets/background.jpeg);
+    background-image: url(../assets/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -712,7 +756,6 @@ p{
     overflow: visible; 
 }
 /* End projects */
-
 /* Tablet */
 @media only screen and (min-width: 768px){
     .cta{
@@ -742,7 +785,7 @@ p{
         flex-direction: column;
         padding: 30px;
         border-radius: 10px;
-        background-image: url(./assets/card-background.jpg);
+        background-image: url(../assets/card-background.jpg);
         background-size: cover;
         margin: 10px 5%;
         z-index: 1;
